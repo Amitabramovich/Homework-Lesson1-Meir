@@ -1,0 +1,15 @@
+using System;					//כתוב תכנית מחשב הקולטת שני מספרים מהמשתמש ומדפיסה את הסכום שלהם ואת הממוצע שלהם
+					
+public class Program
+{
+	public static void Main()
+	{
+												 
+	float a = int.Parse(Console.ReadLine());
+	float b = int.Parse(Console.ReadLine());
+	float sum = a+b;
+	float avg = (a+b)/2;
+	Console.WriteLine("sum = {0}, avrage = {1}", sum, avg);
+
+	}
+}
