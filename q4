@@ -1,0 +1,22 @@
+using System;                                  //	כתוב תוכנית מחשב הקולטת מספר ומדפיסה אם הוא ראשוני או לא.
+					
+public class Program
+{
+	public static void Main()
+	{
+            int number = int.Parse(Console.ReadLine());
+            int number2 = number;
+            while (number % number2 != 0)
+            {
+                number2++;
+            }
+
+            if (number2 == number)
+            {
+                Console.WriteLine("Is Prime");
+            }
+            else
+            {
+                Console.WriteLine("Try Another Number");
+            }	}
+}
