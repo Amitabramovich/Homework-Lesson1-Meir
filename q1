@@ -11,11 +11,11 @@ public class Program
      
         if (a % b == 0)
         {
-        	Console.WriteLine("Number {0} can be devided by {1} withour residue", a, b);
+        	Console.WriteLine("Number {0} can be devided by {1} withour a remainder", a, b);
         }
         else if (a % b != 0)
         {
-        	Console.WriteLine("Number {0} cannot be devided by {1} without residue", a, b);
+        	Console.WriteLine("Number {0} cannot be devided by {1} without a remainder", a, b);
         }
 	}
 }
