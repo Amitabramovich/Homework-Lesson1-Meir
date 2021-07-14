@@ -1,0 +1,32 @@
+using System;																/* כתוב תכנית בה נקלוט מספר למשתנה בשם "סוד" ולאחר מכן נקלוט מספר לתוך "ניחוש".
+																			אם ניחוש קטן מסוד, הדפס "קטן מדי" אם גדול הדפס "גדול מדי" ואם שווים הדפס בינגו.
+																		קלוט מספרים עד הבינגו
+																		*/
+
+					
+public class Program
+{
+	public static void Main()
+	{
+				while (true)
+				{
+				int secret = int.Parse(Console.ReadLine());
+				int guess = int.Parse(Console.ReadLine());
+					if (secret < guess)
+					{
+						Console.WriteLine("too big bro");
+					}
+					else if (secret > guess)
+					{
+						Console.WriteLine("too little bro");
+					}
+
+					else if (secret == guess)
+					{
+						Console.WriteLine("bingo bro!");
+						break;
+					}
+				}
+													
+	}
+}
