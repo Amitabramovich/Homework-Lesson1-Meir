@@ -1,0 +1,22 @@
+using System;		//כתוב תכנית מחשב הקולטת מספרים עד אשר נקלט מספר שלילי. הדפס את סכום המספרים שנקלט (ללא המספר השלילי).
+public class Program
+{
+	public static void Main()
+	{
+		int sum = 0;
+		while (true)
+		{
+		int num = int.Parse(Console.ReadLine());
+			if (num >= 0)
+			{		
+			sum+=num;
+			}
+			else if (num<0)
+			{
+			Console.WriteLine(sum);
+			break;
+			}	
+		}
+
+	}
+}
