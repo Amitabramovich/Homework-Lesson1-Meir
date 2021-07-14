@@ -1,0 +1,28 @@
+using System;       // כתוב תכנית מחשב הקולטת מספר ומדפיסה את חישוב העצרת שלו 
+
+public class Program
+{
+	public static void Main()
+	{
+		int count = 1;
+		int rise = 1;
+		int number = int.Parse(Console.ReadLine());
+		while (true)
+		{
+			count *= rise;
+			Console.Write(rise);
+			if (rise >= number)
+				Console.Write("=" + count);
+			else
+				Console.Write("*");
+			++rise;
+			if (number < rise)
+			{
+				break;
+			}
+			else
+				continue;
+		}
+	
+	}	
+}
